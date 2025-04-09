@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Register = () => {
+  const [state, setState] = useState({
+    userName: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+    image: "",
+  });
+
+  const inputHandle = (e) => {};
+
   return (
     <div className="register">
       <div className="card">
@@ -15,6 +25,8 @@ const Register = () => {
               <label htmlFor="username">User Name</label>
               <input
                 type="text"
+                onChange={inputHandle}
+                name="userName"
                 className="form-control"
                 placeholder="User Name"
                 id="username"
@@ -25,6 +37,8 @@ const Register = () => {
               <label htmlFor="email">Email</label>
               <input
                 type="email"
+                onChange={inputHandle}
+                name="email"
                 className="form-control"
                 placeholder="Email"
                 id="email"
@@ -35,6 +49,8 @@ const Register = () => {
               <label htmlFor="password">Password</label>
               <input
                 type="password"
+                onChange={inputHandle}
+                name="password"
                 className="form-control"
                 placeholder="Password"
                 id="password"
@@ -45,6 +61,8 @@ const Register = () => {
               <label htmlFor="password">Confirm Password</label>
               <input
                 type="confirmPassword"
+                onChange={inputHandle}
+                name="confirmPassword"
                 className="form-control"
                 placeholder="Confirm Password"
                 id="confirmPassword"
@@ -56,7 +74,13 @@ const Register = () => {
                 <div className="image"></div>
                 <div className="file">
                   <label htmlFor="image">Select Image</label>
-                  <input type="file" className="form-control" id="image" />
+                  <input
+                    type="file"
+                    onChange={inputHandle}
+                    name="image"
+                    className="form-control"
+                    id="image"
+                  />
                 </div>
               </div>
             </div>
@@ -66,7 +90,9 @@ const Register = () => {
             </div>
             <div className="form-group">
               <span className="link">
-                <Link className="text" to='/login'>Already Have An Account?</Link>
+                <Link className="text" to="/login">
+                  Already Have An Account?
+                </Link>
               </span>
             </div>
           </form>
