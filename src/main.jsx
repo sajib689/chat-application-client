@@ -4,9 +4,10 @@ import './index.css'
 import './main.scss'
 import { RouterProvider } from 'react-router-dom'
 import router from './router/Router';
+import { store } from './store/store';
 
 createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router}>
-    
-  </RouterProvider>,
+  <Provider store={store}>
+    <RouterProvider router={router} />
+    </Provider>,
 )
