@@ -39,6 +39,26 @@ const Register = () => {
                 id="password"
               />
             </div>
+            {/*Confirm Password */}
+            <div className="form-group">
+              <label htmlFor="password">Confirm Password</label>
+              <input
+                type="confirmPassword"
+                className="form-control"
+                placeholder="Confirm Password"
+                id="confirmPassword"
+              />
+            </div>
+            {/* Image */}
+            <div className="form-group">
+              <div className="file-image">
+                <div className="image"></div>
+                <div className="file">
+                  <label htmlFor="image">Select Image</label>
+                  <input type="file" className="form-control" id="image" />
+                </div>
+              </div>
+            </div>
           </form>
         </div>
       </div>
