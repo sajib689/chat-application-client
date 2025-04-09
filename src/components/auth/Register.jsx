@@ -6,7 +6,7 @@ const Register = () => {
     <div className="register">
       <div className="card">
         <div className="card-header">
-          <h2>Register</h2>
+          <h3>Register</h3>
         </div>
         <div className="card-body">
           <form action="">
