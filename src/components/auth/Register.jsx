@@ -65,8 +65,8 @@ const Register = () => {
               <input type="submit" className="btn" value="Register" />
             </div>
             <div className="form-group">
-              <span>
-                <Link to='/login'>Already Have An Account?</Link>
+              <span className="link">
+                <Link className="text" to='/login'>Already Have An Account?</Link>
               </span>
             </div>
           </form>
