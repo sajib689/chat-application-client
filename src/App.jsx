@@ -1,11 +1,11 @@
-import Register from "./components/auth/Register"
+import { Outlet } from "react-router-dom"
 
 
 function App() {
 
   return (
     <div>
-      <Register />
+      <Outlet/>
     </div>
   )
 }

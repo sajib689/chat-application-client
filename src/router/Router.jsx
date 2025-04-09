@@ -7,15 +7,19 @@ import Login from "./../components/auth/Login";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
-    errorElement: <ErrorPage />,
+    element: <App />, 
+    errorElement: <ErrorPage />, 
     children: [
+      {
+        index: true, 
+        element: <Register />, 
+      },
       {
         path: "/register",
         element: <Register />,
       },
       {
-        path: "/login",
+        path: "/login", 
         element: <Login />,
       },
     ],
