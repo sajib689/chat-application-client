@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   return (
@@ -58,6 +59,15 @@ const Register = () => {
                   <input type="file" className="form-control" id="image" />
                 </div>
               </div>
+            </div>
+            {/* Button */}
+            <div className="form-group">
+              <input type="submit" className="btn" value="Register" />
+            </div>
+            <div className="form-group">
+              <span>
+                <Link ></Link>
+              </span>
             </div>
           </form>
         </div>
